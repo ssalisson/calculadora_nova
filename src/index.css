@@ -13,8 +13,9 @@
   --blue-bg:    #e3f2fd;
   --ink:        #1a1a1a;
   --ink-soft:   #555;
-  --card:       #ffffff;
-  --border:     #ccc;
+  --card:       #FCFAEE; /* Creme */
+  --border:     #e0dcd0;
+  --bg-color:   #EAE4D3; /* Bege */
   --radius-sm:  6px;
   --radius-md:  12px;
   --radius-lg:  16px;
@@ -47,22 +48,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   position: relative;
-  background-color: #000;
+  background-color: var(--bg-color);
   padding: 20px;
   -webkit-font-smoothing: antialiased;
   overflow-y: auto;
-}
-
-/* Foto da UPE borrada como fundo */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  background: url('/upe.webp') no-repeat center center;
-  background-size: cover;
-  filter: blur(3px);
-  transform: scale(1.05);
 }
 
 /* ── Card / container principal ── */
@@ -72,7 +61,7 @@ body::before {
   background-color: var(--card);
   padding: 20px;
   border-radius: var(--radius-lg);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra mais suave para fundo claro */
   text-align: center;
   width: 95%;
   max-width: 480px;
