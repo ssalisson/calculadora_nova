@@ -128,8 +128,8 @@ export default function App() {
 
       {/* Cabeçalho */}
       <header className="masthead">
-        <h1>Quanto você precisa tirar no SSA-2?</h1>
-        <p className="sub">Feito para quem já tem a nota do SSA-1 e quer saber a meta mínima para seguir no páreo.</p>
+        <h1>Você fez a prova do SSA&nbsp;1?</h1>
+        <p className="sub">Então digita o teu nome que eu vou te ajudar a encontrar a tua posição no pré-listão e a nota que você conseguiu alcançar.</p>
       </header>
 
       <section className="card">
