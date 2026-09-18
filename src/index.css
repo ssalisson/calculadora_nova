@@ -83,7 +83,7 @@ body::before {
     0 4px 16px rgba(0, 0, 0, 0.18);
   text-align: center;
   width: 95%;
-  max-width: 480px;
+  max-width: 620px;
   margin: auto;
   scroll-margin-bottom: 20px;
   /* Bordinha dourada sutil */
@@ -91,7 +91,7 @@ body::before {
 }
 
 @media (min-width: 480px) {
-  .wrap { padding: 30px; width: 100%; }
+  .wrap { padding: 40px; width: 100%; }
 }
 
 /* ── Logo ── */
@@ -132,19 +132,19 @@ body::before {
 }
 
 .masthead h1 {
-  font-size: clamp(20px, 5.5vw, 26px);
+  font-size: clamp(24px, 5.5vw, 34px);
   font-weight: 800;
   color: var(--ink);
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   line-height: 1.2;
 }
 
 .masthead .sub {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 38ch;
+  max-width: 44ch;
 }
 
 /* ── Card interno ── */
@@ -195,8 +195,8 @@ body::before {
 .nome-input, .curso-select {
   width: 100%;
   font-family: inherit;
-  font-size: 15px;
-  padding: 12px;
+  font-size: 17px;
+  padding: 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: #fff;
@@ -273,10 +273,10 @@ body::before {
 }
 
 .hello-name {
-  font-size: clamp(18px, 5vw, 24px);
+  font-size: clamp(22px, 5vw, 30px);
   font-weight: 700;
   color: var(--ink);
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   text-align: center;
 }
 
@@ -315,7 +315,7 @@ body::before {
 }
 
 .mini-value {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.2;
 }
@@ -333,12 +333,12 @@ body::before {
   width: 100%;
   border: none;
   border-radius: var(--radius-sm);
-  padding: 14px 16px;
+  padding: 16px 20px;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  margin-top: 12px;
+  margin-top: 14px;
   color: #fff;
   transition: background 0.3s ease, transform 0.1s;
 }
@@ -398,18 +398,18 @@ body::before {
 
 .goal-value {
   font-weight: 900;
-  font-size: clamp(36px, 10vw, 48px);
+  font-size: clamp(44px, 10vw, 60px);
   line-height: 1;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .goal-panel.ok .goal-value { color: var(--green-dark); }
 .goal-panel.impossible .goal-value { color: #c62828; }
 
-.goal-sub { font-size: 14px; color: var(--ink-soft); font-weight: 500; }
+.goal-sub { font-size: 16px; color: var(--ink-soft); font-weight: 500; }
 
-.acertos-box { margin-top: 14px; font-size: 15px; color: var(--ink); text-align: center; }
-.acertos-box strong { font-size: 18px; color: var(--green-dark); }
+.acertos-box { margin-top: 14px; font-size: 17px; color: var(--ink); text-align: center; }
+.acertos-box strong { font-size: 21px; color: var(--green-dark); }
 
 .impossible-note { margin-top: 12px; font-size: 13px; color: #c62828; line-height: 1.5; }
 
