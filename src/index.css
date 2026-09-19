@@ -58,14 +58,9 @@ body {
   overflow-y: auto;
 }
 
-/* Overlay creme/bege sobre a imagem de fundo */
+/* Overlay removido — foto aparece sem filtro colorido */
 body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(220, 210, 190, 0.60); /* overlay mais transparente - foto aparece mais */
-  z-index: 0;
-  pointer-events: none;
+  display: none;
 }
 
 /* ── Card / container principal ── */
@@ -149,10 +144,10 @@ body::before {
 
 /* ── Card interno ── */
 .card {
-  background: #f8f9fa;
+  background: transparent;
   border-radius: var(--radius-md);
   padding: 20px 16px;
-  border: 1px solid #eee;
+  border: none;
   text-align: left;
 }
 
@@ -352,7 +347,21 @@ body::before {
 .btn-ghost { background-color: #607d8b; margin-top: 0; }
 .btn-ghost:hover { background-color: #455a64; }
 
+.btn-danger { background-color: #e53935; margin-top: 0; }
+.btn-danger:hover { background-color: #c62828; }
+
 .actions { margin-top: 16px; }
+
+.actions-row {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions-row .btn {
+  margin-top: 0;
+  flex: 1;
+}
 
 /* ── Resultado ── */
 .result-header {

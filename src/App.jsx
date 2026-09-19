@@ -118,6 +118,11 @@ export default function App() {
     setTimeout(() => inputRef.current?.focus(), 50)
   }, [])
 
+  const limpar = useCallback(() => {
+    setCurso('')
+    setResultado(null)
+  }, [])
+
   return (
     <main className="wrap" ref={wrapRef}>
       {/* Logo */}
@@ -251,8 +256,13 @@ export default function App() {
               </div>
             )}
 
-            <div className="actions">
-              <button className="btn btn-ghost" onClick={reiniciar}>↺ Refazer</button>
+            <div className="actions actions-row">
+              <button className="btn btn-ghost" id="btn-limpar" onClick={limpar}>
+                <span>🗑</span> Limpar
+              </button>
+              <button className="btn btn-danger" id="btn-reiniciar" onClick={reiniciar}>
+                <span>↺</span> Reiniciar
+              </button>
             </div>
           </div>
         )}
